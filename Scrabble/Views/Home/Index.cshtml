@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css">
+    <title>Scrabbles</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>OMG scrabble</h1>
+      <form method="post" action="/calculate">
+        <input class="form-control" name="word" placeholder="Enter a word, press enter to see its score, turd." type="text" pattern="[A-Za-z_]+">
+        <button type="submit" hidden></button>
+      </form>
+      <div class="results">
+        <p>Your word was: @Model.GetWord()</p>
+        <p>It is worth: <span id="glowPoints">@Model.GetScore()</span> in Scrabble-land with the North American traditional rule-set</p>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>

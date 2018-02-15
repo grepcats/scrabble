@@ -27,11 +27,25 @@ namespace Scrabble.Tests
     }
 
     [TestMethod]
-    public void ScoreWord_TestOutput_Int()
+    public void ScoreWord_TestOutput_Void()
     {
       //arrange
       int controlScore = 8;
       WordScore newWordScore = new WordScore("banana");
+
+      //act
+      newWordScore.ScoreWord();
+
+      //assert
+      Assert.AreEqual(controlScore, newWordScore.GetScore());
+    }
+
+    [TestMethod]
+    public void ScoreWord_TestCaps_Void()
+    {
+      //arrange
+      int controlScore = 8;
+      WordScore newWordScore = new WordScore("BAnAna");
 
       //act
       newWordScore.ScoreWord();

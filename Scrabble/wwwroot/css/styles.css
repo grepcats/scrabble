@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+  background-image: url("https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif");
+  filter: FlipH;
+  background-size: cover;
+  color: white;
+  text-shadow: 5px 5px purple;
+  font-size: 10em;
+}
+
+label {
+  margin-top: 20px;
+  color: white;
+  font-size: 2em;
+}
+
+.result {
+  font-size: 10em;
+  font-weight: bold;
+  color: red;
+  text-shadow: 10px 10px white;
+  font-family: 'Butcherman', cursive;
+}
+
+body {
+  background-image: url("https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif");
+  background-size: cover;
+  color: white;
+}
+
+p{
+    font-size: 8em;
+}
+
+#glowPoints
+{
+  text-shadow: 0 8px 8px purple, 0 10px 10px black;
+}

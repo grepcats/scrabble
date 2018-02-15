@@ -30,11 +30,9 @@ namespace Scrabble.Models
     public void ScoreWord()
     {
       string upperWord = _word.ToUpper();
-      Console.WriteLine("hey what's up");
       foreach (char letter in upperWord)
       {
         _score += scrabDictionary[letter];
-        Console.WriteLine(_score);
       }
     }
   }
