@@ -1,0 +1,26 @@
+.jumbotron {
+  text-align: center;
+  background-image: url("https://media0.giphy.com/media/l3vR2oTYVyVPbuOLS/giphy.gif");
+  background-size: cover;
+  color: white;
+  text-shadow: 5px 5px red;
+
+}
+
+label {
+  margin-top: 20px;
+  color: white;
+  font-size: 2em;
+}
+
+.result {
+  font-size: 10em;
+  font-weight: bold;
+  color: red;
+  text-shadow: 10px 10px white;
+  font-family: 'Butcherman', cursive;
+}
+
+body {
+  background-image: url("https://media.giphy.com/media/WxkfDC73n89hK/giphy.gif");
+}
