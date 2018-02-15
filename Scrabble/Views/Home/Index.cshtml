@@ -14,8 +14,16 @@
         <button type="submit" hidden></button>
       </form>
       <div class="results">
-        <p>Your word was: @Model.GetWord()</p>
-        <p>It is worth: <span id="glowPoints">@Model.GetScore()</span> in Scrabble-land with the North American traditional rule-set</p>
+        @if (Model.GetWord() == "")
+        {
+          <p>COme on, jerk, enter a wrd</p>
+        }
+        else
+        {
+          <p>Your word was: @Model.GetWord()</p>
+          <p>It is worth: <span id="glowPoints">@Model.GetScore()</span> in Scrabble-land with the North American traditional rule-set</p>
+        }
+
       </div>
 
     </div>

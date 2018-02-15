@@ -8,7 +8,7 @@ namespace Scrabble.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
-      WordScore dummyScore = new WordScore("nope");
+      WordScore dummyScore = new WordScore("");
       return View("Index", dummyScore);
     }
 
